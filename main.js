@@ -17305,8 +17305,8 @@ window.onload=function()
 				},
 				function(){
 					Game.Launch();
-					if (top!=self && !Game.local) Game.ErrorFrame();
-					else
+					(top!=self && !Game.local) ;
+					
 					{
 						console.log('[=== '+choose([
 							'Oh, hello!',
@@ -17357,4 +17357,5 @@ window.onload=function()
 		else if (!lang) {loadLangAndLaunch('EN',true);}
 		else loadLangAndLaunch(lang);
 	}
+
 };
